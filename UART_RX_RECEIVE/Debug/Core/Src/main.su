@@ -1,0 +1,5 @@
+main.c:11:5:main	16	static
+main.c:24:6:Init_USART	4	static
+main.c:36:6:Char_Get	4	static
+main.c:41:6:led_play	16	static
+main.c:54:6:delay	16	static
