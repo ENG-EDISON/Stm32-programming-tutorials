@@ -1,0 +1,5 @@
+main.c:23:5:main	16	static
+main.c:38:6:USART_Init	4	static
+main.c:52:5:UART_TX	16	static
+main.c:60:6:UART_RX	4	static
+main.c:68:6:delay	16	static
