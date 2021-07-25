@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: EDISON NGUNJIRI, SCHOOL, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.15
+Assembler:       Armasm.exe V6.15
+Linker/Locator:  ArmLink.exe V6.15
+Library Manager: ArmAr.exe V6.15
+Hex Converter:   FromElf.exe V6.15
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\PROGRAMMING\ukeil_vison\ADC_UART_TIM1\ADC_UART_TIM1.uvprojx
+Project File Date:  06/17/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.15', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'STM32F446RET'
+ADC_UART_TIM1.c(35): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        ADC->CCR &=~ 0x400000;//Vbat must be disable for the temp sensor
+                 ~~^~~~~~~~~~
+ADC_UART_TIM1.c(45): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+                        data = ADC1->DR;
+                             ~ ~~~~~~^~
+ADC_UART_TIM1.c(49): warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+                for(i=0;i<strlen(name);i++)
+                        ~^~~~~~~~~~~~~
+ADC_UART_TIM1.c(77): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+ADC_UART_TIM1.c(8): warning: no previous extern declaration for non-static variable 'data' [-Wmissing-variable-declarations]
+int data;
+    ^
+ADC_UART_TIM1.c(8): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int data;
+^
+ADC_UART_TIM1.c(9): warning: no previous extern declaration for non-static variable 'voltage' [-Wmissing-variable-declarations]
+double voltage;
+       ^
+ADC_UART_TIM1.c(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+double voltage;
+^
+ADC_UART_TIM1.c(10): warning: no previous extern declaration for non-static variable 'celsius' [-Wmissing-variable-declarations]
+double celsius;
+       ^
+ADC_UART_TIM1.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+double celsius;
+^
+ADC_UART_TIM1.c(11): warning: no previous extern declaration for non-static variable 'name' [-Wmissing-variable-declarations]
+char name[20];
+     ^
+ADC_UART_TIM1.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char name[20];
+^
+8 warnings generated.
+compiling ADC_UART_TIM1.c...
+linking...
+Program Size: Code=6964 RO-data=644 RW-data=0 ZI-data=1672  
+".\Objects\ADC_UART_TIM1.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32F446RET
+  C:\Users\USER\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\USER\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f446xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F446xx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

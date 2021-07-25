@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"variable_duty_cycle_tutorial\startup_stm32f401xe.o"
+"variable_duty_cycle_tutorial\main.o"
+"variable_duty_cycle_tutorial\stm32f4xx_it.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_msp.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_adc.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_adc_ex.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_rcc.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_rcc_ex.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_flash.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_flash_ex.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_flash_ramfunc.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_gpio.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_dma_ex.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_dma.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_pwr.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_pwr_ex.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_cortex.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_exti.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_tim.o"
+"variable_duty_cycle_tutorial\stm32f4xx_hal_tim_ex.o"
+"variable_duty_cycle_tutorial\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "VARIABLE_DUTY_CYCLE_TUTORIAL\VARIABLE_DUTY_CYCLE_TUTORIAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "VARIABLE_DUTY_CYCLE_TUTORIAL.map" -o VARIABLE_DUTY_CYCLE_TUTORIAL\VARIABLE_DUTY_CYCLE_TUTORIAL.axf
