@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"lcd16x2_tutorial\startup_stm32f446xx.o"
+"lcd16x2_tutorial\main.o"
+"lcd16x2_tutorial\stm32f4xx_it.o"
+"lcd16x2_tutorial\stm32f4xx_hal_msp.o"
+"lcd16x2_tutorial\stm_my_lcd16x2.o"
+"lcd16x2_tutorial\stm32f4xx_hal_tim.o"
+"lcd16x2_tutorial\stm32f4xx_hal_tim_ex.o"
+"lcd16x2_tutorial\stm32f4xx_hal_rcc.o"
+"lcd16x2_tutorial\stm32f4xx_hal_rcc_ex.o"
+"lcd16x2_tutorial\stm32f4xx_hal_flash.o"
+"lcd16x2_tutorial\stm32f4xx_hal_flash_ex.o"
+"lcd16x2_tutorial\stm32f4xx_hal_flash_ramfunc.o"
+"lcd16x2_tutorial\stm32f4xx_hal_gpio.o"
+"lcd16x2_tutorial\stm32f4xx_hal_dma_ex.o"
+"lcd16x2_tutorial\stm32f4xx_hal_dma.o"
+"lcd16x2_tutorial\stm32f4xx_hal_pwr.o"
+"lcd16x2_tutorial\stm32f4xx_hal_pwr_ex.o"
+"lcd16x2_tutorial\stm32f4xx_hal_cortex.o"
+"lcd16x2_tutorial\stm32f4xx_hal.o"
+"lcd16x2_tutorial\stm32f4xx_hal_exti.o"
+"lcd16x2_tutorial\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "LCD16X2_TUTORIAL\LCD16X2_TUTORIAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD16X2_TUTORIAL.map" -o LCD16X2_TUTORIAL\LCD16X2_TUTORIAL.axf
