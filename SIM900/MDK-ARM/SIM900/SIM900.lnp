@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"sim900\startup_stm32f401xe.o"
+"sim900\main.o"
+"sim900\stm32f4xx_it.o"
+"sim900\stm32f4xx_hal_msp.o"
+"sim900\stm32f4xx_hal_tim.o"
+"sim900\stm32f4xx_hal_tim_ex.o"
+"sim900\stm32f4xx_hal_uart.o"
+"sim900\stm32f4xx_hal_rcc.o"
+"sim900\stm32f4xx_hal_rcc_ex.o"
+"sim900\stm32f4xx_hal_flash.o"
+"sim900\stm32f4xx_hal_flash_ex.o"
+"sim900\stm32f4xx_hal_flash_ramfunc.o"
+"sim900\stm32f4xx_hal_gpio.o"
+"sim900\stm32f4xx_hal_dma_ex.o"
+"sim900\stm32f4xx_hal_dma.o"
+"sim900\stm32f4xx_hal_pwr.o"
+"sim900\stm32f4xx_hal_pwr_ex.o"
+"sim900\stm32f4xx_hal_cortex.o"
+"sim900\stm32f4xx_hal.o"
+"sim900\stm32f4xx_hal_exti.o"
+"sim900\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "SIM900\SIM900.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SIM900.map" -o SIM900\SIM900.axf
