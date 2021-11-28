@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"try_can_bus\startup_stm32f446xx.o"
+"try_can_bus\main.o"
+"try_can_bus\stm32f4xx_it.o"
+"try_can_bus\stm32f4xx_hal_msp.o"
+"try_can_bus\stm32f4xx_hal_can.o"
+"try_can_bus\stm32f4xx_hal_rcc.o"
+"try_can_bus\stm32f4xx_hal_rcc_ex.o"
+"try_can_bus\stm32f4xx_hal_flash.o"
+"try_can_bus\stm32f4xx_hal_flash_ex.o"
+"try_can_bus\stm32f4xx_hal_flash_ramfunc.o"
+"try_can_bus\stm32f4xx_hal_gpio.o"
+"try_can_bus\stm32f4xx_hal_dma_ex.o"
+"try_can_bus\stm32f4xx_hal_dma.o"
+"try_can_bus\stm32f4xx_hal_pwr.o"
+"try_can_bus\stm32f4xx_hal_pwr_ex.o"
+"try_can_bus\stm32f4xx_hal_cortex.o"
+"try_can_bus\stm32f4xx_hal.o"
+"try_can_bus\stm32f4xx_hal_exti.o"
+"try_can_bus\stm32f4xx_hal_tim.o"
+"try_can_bus\stm32f4xx_hal_tim_ex.o"
+"try_can_bus\stm32f4xx_hal_uart.o"
+"try_can_bus\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "TRY_CAN_BUS\TRY_CAN_BUS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TRY_CAN_BUS.map" -o TRY_CAN_BUS\TRY_CAN_BUS.axf
