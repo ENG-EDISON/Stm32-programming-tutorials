@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"youtube_i2c\startup_stm32f446xx.o"
+"youtube_i2c\main.o"
+"youtube_i2c\stm32f4xx_it.o"
+"youtube_i2c\stm32f4xx_hal_msp.o"
+"youtube_i2c\stm32f4xx_hal_i2c.o"
+"youtube_i2c\stm32f4xx_hal_i2c_ex.o"
+"youtube_i2c\stm32f4xx_hal_rcc.o"
+"youtube_i2c\stm32f4xx_hal_rcc_ex.o"
+"youtube_i2c\stm32f4xx_hal_flash.o"
+"youtube_i2c\stm32f4xx_hal_flash_ex.o"
+"youtube_i2c\stm32f4xx_hal_flash_ramfunc.o"
+"youtube_i2c\stm32f4xx_hal_gpio.o"
+"youtube_i2c\stm32f4xx_hal_dma_ex.o"
+"youtube_i2c\stm32f4xx_hal_dma.o"
+"youtube_i2c\stm32f4xx_hal_pwr.o"
+"youtube_i2c\stm32f4xx_hal_pwr_ex.o"
+"youtube_i2c\stm32f4xx_hal_cortex.o"
+"youtube_i2c\stm32f4xx_hal.o"
+"youtube_i2c\stm32f4xx_hal_exti.o"
+"youtube_i2c\stm32f4xx_hal_tim.o"
+"youtube_i2c\stm32f4xx_hal_tim_ex.o"
+"youtube_i2c\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "YOUTUBE_I2C\YOUTUBE_I2C.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "YOUTUBE_I2C.map" -o YOUTUBE_I2C\YOUTUBE_I2C.axf
