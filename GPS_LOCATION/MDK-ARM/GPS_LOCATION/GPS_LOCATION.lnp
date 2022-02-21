@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"gps_location\startup_stm32f401xe.o"
+"gps_location\main.o"
+"gps_location\stm32f4xx_it.o"
+"gps_location\stm32f4xx_hal_msp.o"
+"gps_location\stm32f4xx_hal_tim.o"
+"gps_location\stm32f4xx_hal_tim_ex.o"
+"gps_location\stm32f4xx_hal_uart.o"
+"gps_location\stm32f4xx_hal_rcc.o"
+"gps_location\stm32f4xx_hal_rcc_ex.o"
+"gps_location\stm32f4xx_hal_flash.o"
+"gps_location\stm32f4xx_hal_flash_ex.o"
+"gps_location\stm32f4xx_hal_flash_ramfunc.o"
+"gps_location\stm32f4xx_hal_gpio.o"
+"gps_location\stm32f4xx_hal_dma_ex.o"
+"gps_location\stm32f4xx_hal_dma.o"
+"gps_location\stm32f4xx_hal_pwr.o"
+"gps_location\stm32f4xx_hal_pwr_ex.o"
+"gps_location\stm32f4xx_hal_cortex.o"
+"gps_location\stm32f4xx_hal.o"
+"gps_location\stm32f4xx_hal_exti.o"
+"gps_location\system_stm32f4xx.o"
+--strict --scatter "GPS_LOCATION\GPS_LOCATION.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPS_LOCATION.map" -o GPS_LOCATION\GPS_LOCATION.axf
