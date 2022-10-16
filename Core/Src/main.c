@@ -41,7 +41,7 @@
 #define  InitHTTP      "AT+HTTPINIT\r\n"
 #define  EnableHTTPS   "AT+HTTPSSL=1\r\n"
 #define  SetCIDPAR     "AT+HTTPPARA= \"CID\",1\r\n"
-#define  SetURL        "AT+HTTPPARA=\"URL\",\"https://script.google.com/macros/s/AKfycbzeQ68bUQL5WwlCO5JzZ1tPIiBU83GbECs0U0WnzgnrjTRGUzSjNnRSoIA7rTcbRbXtVA/exec?data=30\"\r\n"
+#define  SetURL        "AT+HTTPPARA=\"URL\",\"https://script.google.com/macros/s/{SCRIPT ID}/exec?data=30\"\r\n"
 #define  HTTPOST       "AT+HTTPACTION=0\r\n"
 #define  HTTPResponse  "AT+HTTPREAD\r\n"
 #define  TERMINATEHTTP "AT+HTTPTERM\r\n"
